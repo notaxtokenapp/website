@@ -744,6 +744,10 @@ let text = document.getElementsByClassName("share-copy");
         console.error("Failed to copy: ", err);
       }
     });
+
+    if (location.protocol !== "https:") {
+  location.protocol = "https:";
+}
     </script>
 </body>
 
